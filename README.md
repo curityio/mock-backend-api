@@ -2,7 +2,7 @@
 
 This is a mock backend API to simulate a user-driven approval flow used by a custom polling authenticator in the [Curity Identity Server](https://curity.io/).
 
-The API simulates sending a notification to a user, tracking their decision (approve/decline), and allowing the authenticator to poll for the user's response.
+The API simulates sending a notification to a user, tracking their decision (approve/decline), and allowing the [polling-example-authenticator](https://github.com/curityio/polling-example-authenticator/tree/main) to poll for the user's response.
 
 ---
 
