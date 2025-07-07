@@ -13,7 +13,10 @@ const STATUS_DECLINED = 'declined';
 const VALID_ACTIONS = new Set(['approve', 'decline']);
 
 // Helper: Logging with consistent prefix
-const log = (message, ...args) => console.log(`[API] ${message}`, ...args);
+const log = (message, ...args) => {
+  const timestamp = new Date().toISOString();
+  console.log(`[${timestamp}] [API] ${message}`, ...args);
+};
 
 app.post('/send-notification', (req, res) => {
   const { username } = req.body;
